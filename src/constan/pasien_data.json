@@ -1,0 +1,272 @@
+[
+    {
+        "id": 1,
+        "nama": "Budi Santoso",
+        "nik": "3201012345670001",
+        "diagnosa_masuk": "Demam Berdarah",
+        "tanggal_masuk": "2026-03-20",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 101"
+    },
+    {
+        "id": 2,
+        "nama": "Siti Aminah",
+        "nik": "3201019876540002",
+        "diagnosa_masuk": "Hipertensi",
+        "tanggal_masuk": "2026-03-21",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 202"
+    },
+    {
+        "id": 3,
+        "nama": "Dwi Gunardi",
+        "nik": "3201015544330003",
+        "diagnosa_masuk": "Gastritis Akut",
+        "tanggal_masuk": "2026-03-22",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 303"
+    },
+    {
+        "id": 4,
+        "nama": "Eko Prasetyo",
+        "nik": "3201014455660004",
+        "diagnosa_masuk": "Typus",
+        "tanggal_masuk": "2026-03-23",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 102"
+    },
+    {
+        "id": 5,
+        "nama": "Rina Lestari",
+        "nik": "3201017788990005",
+        "diagnosa_masuk": "Asma",
+        "tanggal_masuk": "2026-03-24",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 203"
+    },
+    {
+        "id": 6,
+        "nama": "Agus Setiawan",
+        "nik": "3201011122330006",
+        "diagnosa_masuk": "Diabetes Melitus",
+        "tanggal_masuk": "2026-03-25",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 304"
+    },
+    {
+        "id": 7,
+        "nama": "Dewi Sartika",
+        "nik": "3201016677880007",
+        "diagnosa_masuk": "Anemia",
+        "tanggal_masuk": "2026-03-26",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 103"
+    },
+    {
+        "id": 8,
+        "nama": "Fajar Nugraha",
+        "nik": "3201019900110008",
+        "diagnosa_masuk": "Pneumonia",
+        "tanggal_masuk": "2026-03-27",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 204"
+    },
+    {
+        "id": 9,
+        "nama": "Gita Permata",
+        "nik": "3201012233440009",
+        "diagnosa_masuk": "Vertigo",
+        "tanggal_masuk": "2026-03-28",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 305"
+    },
+    {
+        "id": 10,
+        "nama": "Hadi Wijaya",
+        "nik": "3201015566770010",
+        "diagnosa_masuk": "Radang Tenggorokan",
+        "tanggal_masuk": "2026-03-29",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 104"
+    },
+    {
+        "id": 11,
+        "nama": "Indah Putri",
+        "nik": "3201018899000011",
+        "diagnosa_masuk": "Infection Urinary Track",
+        "tanggal_masuk": "2026-03-30",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 205"
+    },
+    {
+        "id": 12,
+        "nama": "Joko Susilo",
+        "nik": "3201011100220012",
+        "diagnosa_masuk": "Asam Urat",
+        "tanggal_masuk": "2026-03-31",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 306"
+    },
+    {
+        "id": 13,
+        "nama": "Kartika Sari",
+        "nik": "3201014433220013",
+        "diagnosa_masuk": "Migrain Akut",
+        "tanggal_masuk": "2026-04-01",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 105"
+    },
+    {
+        "id": 14,
+        "nama": "Lutfi Hakim",
+        "nik": "3201017766550014",
+        "diagnosa_masuk": "Cedera Otot",
+        "tanggal_masuk": "2026-04-01",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 206"
+    },
+    {
+        "id": 15,
+        "nama": "Maya Sofie",
+        "nik": "3201019988770015",
+        "diagnosa_masuk": "Alergi Makanan",
+        "tanggal_masuk": "2026-04-02",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 307"
+    },
+    {
+        "id": 16,
+        "nama": "Nanang Qosim",
+        "nik": "3201011231230016",
+        "diagnosa_masuk": "Bronkitis",
+        "tanggal_masuk": "2026-04-02",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 106"
+    },
+    {
+        "id": 17,
+        "nama": "Olivia Tan",
+        "nik": "3201014564560017",
+        "diagnosa_masuk": "Tonsilitis",
+        "tanggal_masuk": "2026-04-03",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 207"
+    },
+    {
+        "id": 18,
+        "nama": "Putu Gede",
+        "nik": "3201017897890018",
+        "diagnosa_masuk": "Dermatitis",
+        "tanggal_masuk": "2026-04-03",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 308"
+    },
+    {
+        "id": 19,
+        "nama": "Qori Aina",
+        "nik": "3201011011010019",
+        "diagnosa_masuk": "Konjungtivitas",
+        "tanggal_masuk": "2026-04-04",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 107"
+    },
+    {
+        "id": 20,
+        "nama": "Raka Buana",
+        "nik": "3201012022020020",
+        "diagnosa_masuk": "Insomnia Akut",
+        "tanggal_masuk": "2026-04-04",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 208"
+    },
+    {
+        "id": 21,
+        "nama": "Siska Wahyuni",
+        "nik": "3201013033030021",
+        "diagnosa_masuk": "Radang Sendi",
+        "tanggal_masuk": "2026-04-05",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 309"
+    },
+    {
+        "id": 22,
+        "nama": "Tegar Arya",
+        "nik": "3201014044040022",
+        "diagnosa_masuk": "Dispepsia",
+        "tanggal_masuk": "2026-04-05",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 108"
+    },
+    {
+        "id": 23,
+        "nama": "Umi Kulsum",
+        "nik": "3201015055050023",
+        "diagnosa_masuk": "Sinusitis",
+        "tanggal_masuk": "2026-04-05",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 209"
+    },
+    {
+        "id": 24,
+        "nama": "Vino G Bastian",
+        "nik": "3201016066060024",
+        "diagnosa_masuk": "Hernia",
+        "tanggal_masuk": "2026-04-06",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 310"
+    },
+    {
+        "id": 25,
+        "nama": "Winda Utami",
+        "nik": "3201017077070025",
+        "diagnosa_masuk": "Maag Kronis",
+        "tanggal_masuk": "2026-04-06",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 109"
+    },
+    {
+        "id": 26,
+        "nama": "Xander Cage",
+        "nik": "3201018088080026",
+        "diagnosa_masuk": "Sakit Gigi",
+        "tanggal_masuk": "2026-04-06",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 210"
+    },
+    {
+        "id": 27,
+        "nama": "Yulia Rahma",
+        "nik": "3201019099090027",
+        "diagnosa_masuk": "Katarak",
+        "tanggal_masuk": "2026-04-07",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 311"
+    },
+    {
+        "id": 28,
+        "nama": "Zainal Abidin",
+        "nik": "3201010100100028",
+        "diagnosa_masuk": "Flu Burung",
+        "tanggal_masuk": "2026-04-07",
+        "dokter_pj": "dr. Andi Wijaya",
+        "ruangan": "Melati 110"
+    },
+    {
+        "id": 29,
+        "nama": "Ahmad Dani",
+        "nik": "3201011211210029",
+        "diagnosa_masuk": "Gondongan",
+        "tanggal_masuk": "2026-04-07",
+        "dokter_pj": "dr. Shinta Kurnia",
+        "ruangan": "Mawar 211"
+    },
+    {
+        "id": 30,
+        "nama": "Bella Hadid",
+        "nik": "3201012322320030",
+        "diagnosa_masuk": "Kelelahan Ekstrim",
+        "tanggal_masuk": "2026-04-07",
+        "dokter_pj": "dr. Bambang Heru",
+        "ruangan": "Anggrek 312"
+    }
+]
