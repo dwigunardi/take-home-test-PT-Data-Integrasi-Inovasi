@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Take Home Test PT Data Integrasi Inovasi",
-  description: "Take Home Test PT Data Integrasi Inovasi",
+  description: "Studi Kasus skenario Pendaftaran Pasien Masuk Rawat Inap",
 };
 
 export default function RootLayout({

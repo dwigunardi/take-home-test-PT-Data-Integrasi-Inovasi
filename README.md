@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Sistem Manajemen Pasien Rawat Inap (Modul Pasien Masuk)
 
-## Getting Started
+Aplikasi dasbor manajemen pasien berbasis web yang dibangun secara eksklusif sebagai bagian dari *Take Home Test* / Studi Kasus untuk **PT. Data Integrasi Inovasi**. Aplikasi ini berfokus pada performa, validasi data yang ketat, dan pengalaman pengguna (UX) yang mulus untuk skenario Pendaftaran Pasien Masuk.
 
-First, run the development server:
+## 🚀 Teknologi yang Digunakan
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* **Framework:** [Next.js (App Router)](https://nextjs.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **UI Components:** [Shadcn UI](https://ui.shadcn.com/) (Radix UI primitives)
+* **State Management:** [Zustand](https://github.com/pmndrs/zustand)
+* **Data Validation:** [Zod](https://zod.dev/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Notifications:** [Sonner](https://sonner.emilkowal.ski/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Fitur Utama & Highlight Arsitektur
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **Simulasi Mock API:** Menggunakan Next.js Route Handlers (`/api/patients`) dengan simulasi *network delay* 500ms untuk meniru lingkungan nyata.
+* **Smart Hydration & State Management:** Menggunakan Zustand sebagai *Single Source of Truth*. Data hanya di-*fetch* dari API saat pertama kali dimuat, mencegah re-render dan re-fetch yang tidak perlu saat navigasi antar halaman.
+* **Debounced Search:** Pencarian difilter menggunakan sistem penundaan (debounce) 500ms untuk mencegah *UI stuttering* dan meminimalisir beban proses.
+* **Dynamic Pagination & Sorting:** Logika *slicing* halaman dilakukan di sisi *client* secara responsif dengan pengurutan data khusus (*localeCompare* untuk string dan penguraian *Timestamp* untuk tanggal).
+* **Enterprise-Level Form Validation:** Validasi form menggunakan **Native FormData dikombinasikan dengan Zod schema**. Tidak menggunakan *controlled inputs* (`useState` per field), sehingga form sangat ringan namun tetap memiliki pesan error interaktif.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Cara Menjalankan Proyek
 
-## Learn More
+Pastikan Anda telah menginstal [Node.js](https://nodejs.org/) di sistem Anda.
 
-To learn more about Next.js, take a look at the following resources:
+**1. Clone dan Install Dependencies**
+\`\`\`bash
+npm install
+\`\`\`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**2. Rekomendasi Eksekusi (Production Mode)**
+Untuk merasakan performa asli aplikasi, transisi *Skeleton Loading* yang mulus, dan *routing* yang optimal, **sangat disarankan** untuk menjalankan aplikasi di mode *production*:
+\`\`\`bash
+npm run build
+npm run start
+\`\`\`
+Buka [http://localhost:3000](http://localhost:3000) di browser Anda.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧪 Panduan Pengujian Khusus (Testing Guide)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Aplikasi ini telah dilengkapi dengan penanganan status antarmuka (UI States) yang komprehensif. Berikut adalah cara untuk menguji skenario tertentu:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**1. Menguji Loading State (Skeleton)**
+Aplikasi ini sudah dikonfigurasi dengan *delay* buatan selama 500ms pada setiap interaksi (Pencarian, Paginasi, Urutkan Kolom, dan Simpan Data). Anda cukup melakukan interaksi pada antarmuka untuk melihat animasi *Skeleton Loader* beraksi.
+
+**2. Menguji Empty State (Kondisi Tidak Ada Data)**
+Untuk melihat bagaimana aplikasi menangani tampilan ketika tidak ada pasien yang terdaftar di sistem, Anda dapat memanipulasi *Mock API* dengan langkah berikut:
+1. Buka file `app/api/patients/route.ts`.
+2. Temukan return json `return NextResponse.json({
+            status: 200,
+            message: "Berhasil mengambil daftar pasien",
+            data: staticPatients, // Ubah ini
+            meta: {
+                total_data: staticPatients.length, // Ubah ini
+                current_page: 1,
+                total_pages: 1,
+                limit: 10
+            }
+        }, { status: 200 })` di bagian atas.
+3. Kosongkan isi *array* tersebut menjadi:
+   \`\`\`typescript
+   data: []
+   total_data: 0
+   \`\`\`
+4. Simpan file, lalu *refresh* halaman di browser. Tabel akan menampilkan *Empty State UI* yang sudah didesain khusus.
+
+---
+*Dikembangkan dengan semangat tinggi oleh Dwi Gunardi Meinaki untuk PT. Data Integrasi Inovasi.*
