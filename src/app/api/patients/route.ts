@@ -6,6 +6,11 @@ const staticPatients = [
     { id: 2, nama: "Siti Aminah", nik: "3201019876540002", diagnosa: "Hipertensi", tgl: "2026-03-21", dokter: "dr. Shinta Kurnia, Sp.A", ruangan: "Mawar 202" },
     { id: 3, nama: "Dwi Gunardi", nik: "3201015544330003", diagnosa: "Gastritis Akut", tgl: "2026-03-22", dokter: "dr. Bambang Heru, Sp.PD", ruangan: "Anggrek 303" },
     { id: 4, nama: "Eko Prasetyo", nik: "3201014455660004", diagnosa: "Typus", tgl: "2026-03-23", dokter: "dr. Andi Wijaya, Sp.PD", ruangan: "Melati 102" },
+    { id: 5, nama: "Siti Nurhayati", nik: "3201012233440005", diagnosa: "Diabetes Mellitus", tgl: "2026-03-24", dokter: "dr. Shinta Kurnia, Sp.A", ruangan: "Mawar 203" },
+    { id: 6, nama: "Rudi Suhartono", nik: "3201011122330006", diagnosa: "Alergi", tgl: "2026-03-25", dokter: "dr. Bambang Heru, Sp.PD", ruangan: "Anggrek 304" },
+    { id: 7, nama: "Siti Nurhayati", nik: "3201012233440005", diagnosa: "Diabetes Mellitus", tgl: "2026-03-24", dokter: "dr. Shinta Kurnia, Sp.A", ruangan: "Mawar 203" },
+    { id: 8, nama: "Rudi Suhartono", nik: "3201011122330006", diagnosa: "Alergi", tgl: "2026-03-25", dokter: "dr. Bambang Heru, Sp.PD", ruangan: "Anggrek 304" },
+    { id: 9, nama: "Siti Nurhayati", nik: "3201012233440005", diagnosa: "Diabetes Mellitus", tgl: "2026-03-24", dokter: "dr. Shinta Kurnia, Sp.A", ruangan: "Mawar 203" },
 ]
 
 export async function GET() {
